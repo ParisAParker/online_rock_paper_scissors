@@ -78,7 +78,7 @@ while True:
         games[gameId].ready = True
         p = 1
 
-    start_new_thread(threaded_client, (conn))
+    start_new_thread(threaded_client, (conn, p, gameId))
 
     # gameID example
     # First player loads in with idCount 1 so (1-1) // 2 = 0 // 2 = 0
