@@ -79,11 +79,3 @@ while True:
         p = 1
 
     start_new_thread(threaded_client, (conn, p, gameId))
-
-    # gameID example
-    # First player loads in with idCount 1 so (1-1) // 2 = 0 // 2 = 0
-    # Second player loads in with idCount 2 so (2-1) // 2 = 1 // 2 = 0
-    # Third player loads in with idCount 3 so (3-1) // 2 = 2 // 2 = 1
-    # Fourth player loads in with idCount 3 so (4-1) // 2 = 3 // 2 = 1
-
-    # When a player connects and there's an uneven amount of player, a new game is created. When the next person connects that game ready state is set to True
